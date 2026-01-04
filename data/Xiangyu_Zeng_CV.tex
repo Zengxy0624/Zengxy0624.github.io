@@ -1,0 +1,125 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{8pt}
+
+% Remove paragraph indentation
+\setlength{\parindent}{0pt}
+
+% Adjust item spacing
+\setlist{leftmargin=*, nosep, itemsep=3pt, topsep=3pt}
+
+% Vertical spacing between paragraphs
+\setlength{\parskip}{3pt}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE \textbf{Xiangyu Zeng}} \\[6pt]
+    Tel: +12177213642 \quad Email: xzeng28@illinois.edu
+\end{center}
+
+\vspace{4pt}
+
+\section{Research Interests}
+
+Vision-Language-Action Models for Robot Manipulation $\cdot$ Imitation Learning and Diffusion Policy $\cdot$ Transformer-based Policy Learning $\cdot$ Trajectory Prediction and Motion Planning $\cdot$ Deep Learning for Autonomous Systems
+
+\section{Education}
+
+\textbf{University of Illinois Urbana Champaign} \hfill 09/2025-Present
+\begin{itemize}
+    \item MEng in Mechanical Engineering, concentration in Control \& Robotics
+\end{itemize}
+
+\vspace{2pt}
+
+\textbf{Wuhan University of Technology} \hfill 09/2021-06/2025
+\begin{itemize}
+    \item Bachelor of Engineering in Intelligent Manufacturing Engineering \hfill GPA: 4.071/5.0
+\end{itemize}
+
+\section{Honors \& Awards}
+
+\begin{itemize}
+    \item First Prize of Yanchang Petroleum Scholarship (Top 0.5\%), Wuhan University of Technology, 2023
+    \item University-level First Class Scholarship (Top 3\%), Wuhan University of Technology, 2022-2024
+    \item Outstanding Student Class Leader, Wuhan University of Technology, 2023
+    \item Independent Innovation Research Fund (Undergraduate Program), Wuhan University of Technology, 2022
+\end{itemize}
+
+\section{Publications}
+
+\vspace{-2pt}
+
+[1] Yiying Wei*, \textbf{Xiangyu Zeng}*(co-first author), Xirui Chen. HTSA-LSTM: Leveraging Driving Habits for Enhanced Long-Term Urban Traffic Trajectory Prediction. Accepted by \textit{Applied Sciences}.
+
+\vspace{3pt}
+
+[2] Xu F, Zong W, Zeng X, et al. Construct a health indicator for bearing based on unsupervised SDAE with Euclidean distance[J]. \textit{Journal of Vibration and Control}, 2025: 10775463251342614
+
+\vspace{3pt}
+
+[3] \textbf{Xiangyu Zeng}, Fan Xu. Construction of Bearing Degradation Health Indicators Based on Unsupervised Augmented Noise Reduction Deep Belief Network. Submitted to \textit{Quality and Reliability Engineering International}. Under Review.
+
+\vspace{3pt}
+
+[4] \textbf{Xiangyu Zeng}, Zhou Hang, Lei Wang. Research on Batch Scheduling of Unrelated Parallel Machines with Flexible Job Sequences for the Standard Gas Manufacturing Sector. Submitted to \textit{Computers \& Industrial Engineering}. Under Review.
+
+\section{Research Experiences}
+
+\vspace{-2pt}
+
+\textbf{Research on Enhanced Long-Term Urban Traffic Trajectory Prediction Model (HTSA-LSTM)} \\
+\textit{Supervised by Dr. Yiying Wei from Wuhan University of Technology} \hfill 06/2024-06/2025
+\begin{itemize}
+    \item Designed HTSA-LSTM network integrating dual spatiotemporal attention mechanism with driving style analysis for autonomous vehicle trajectory prediction
+    \item Developed a novel driving style analysis module using SICC-SC to extract driving primitives and cluster trajectory patterns without predefined labels
+    \item Implemented spatiotemporal attention mechanisms to capture dynamic dependencies across time and space
+    \item Evaluated on the NGSIM dataset with significant improvements over benchmark models: 20.72\% reduction in RMSE and 24.98\% reduction in NLL for 5-second predictions
+    \item Carried out real-world validations on two types of roads in Wuhan, achieving: R\textsuperscript{2}>0.979 for 5-second highway predictions and R\textsuperscript{2}>0.927 for 3-second urban road predictions
+\end{itemize}
+
+\vspace{3pt}
+
+\textbf{Construction of Bearing Degradation Health Indicators Based on Unsupervised Augmented Noise Reduction Deep Belief Network} \hfill 11/2022-03/2024 \\
+\textit{Team Leader, Wuhan University of Technology Independent Innovation Research Fund Undergraduate Program, Supervised by Prof. Fan Xu from Wuhan University of Technology}
+\begin{itemize}
+    \item Gathered and preprocessed the bearing data provided by the University of Cincinnati lab
+    \item Constructed an SGDBN model using Python, which is processed with Savitzky-Golay filters between each RBM layer of the DBN and after the output layer, to process the data generated during bearing operation and reduce noise, thus accurately predicting bearing life
+    \item Examined and selected the optimal filter parameters, learning rate, and neural network structure in turn through multiple sets of experiments
+    \item Assessed the performance of the SGDBN model on the test set using the Mon smoothing metrics, finding that the Mon value obtained reaches 7-10 times that obtained by traditional RMS and K-Mediods, and 3-5 times that obtained by SOM and DBN, proving it extracts health indicators with the highest smoothing and noise reduction performance
+    \item Demonstrated the excellent performance of this model in constructing bearing degradation curves and determining the health status of bearings for fault diagnosis
+\end{itemize}
+
+\vspace{3pt}
+
+\textbf{Non-Standard Gas Filling Plant Scheduling Problem Based on Imperialist Competitive Algorithm} \\
+\textit{Supervised by Prof. Lei Wang from Wuhan University of Technology} \hfill 11/2022-04/2024
+\begin{itemize}
+    \item Developed a Federated Imperialist Competitive Algorithm (FICA) using MATLAB to address the scheduling challenges in a non-standard gas filling plant, overcoming the local optima issues of traditional ICA through federated partitioning and local optimization
+    \item Constructed a mathematical model to minimize makespan and resource consumption, considering the complexity of flexible filling, batch processing, and heterogeneous equipment
+    \item Introduced a dual-layer optimization strategy for both intra- and inter-batch scheduling, significantly enhancing search efficiency and solution quality
+    \item Demonstrated that FICA improves scheduling performance, reducing processing time by approximately 15\% and machining losses by 20\% compared to traditional ICA, and both by over 30\% compared to the genetic algorithm
+\end{itemize}
+
+\section{Technical Skills}
+
+\vspace{-2pt}
+
+\textbf{Programming Languages:} Python, MATLAB \\[2pt]
+\textbf{ML/DL Frameworks:} PyTorch \\[2pt]
+\textbf{Robotics Platforms:} Kinova Gen3, UR5 \\[2pt]
+\textbf{Simulation \& Tools:} ROS/ROS2, Gazebo, Isaac Sim/Isaac Gym \\[2pt]
+\textbf{Methods:} Imitation Learning, Diffusion Policy, Transformer-based Policy Learning
+
+\end{document}
